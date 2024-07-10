@@ -9,3 +9,4 @@ FROM node:latest
 WORKDIR /data
 COPY  --from=builder /data/dist/main_node.mjs app.mjs
 CMD ["node", "app.mjs"]
+EXPOSE 8000
